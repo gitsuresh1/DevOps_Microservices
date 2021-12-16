@@ -1,0 +1,11 @@
+version = 0.1
+[y]
+[y.deploy]
+[y.deploy.parameters]
+stack_name = "wikistack"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-py10bcmv10ah"
+s3_prefix = "wikistack"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=094715509311.dkr.ecr.us-east-1.amazonaws.com/wikistack12233e20/helloworldfunction19d43fc4repo"]
